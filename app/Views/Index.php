@@ -28,56 +28,61 @@
             </section> -->
             <!-- NAVIGATION -->
             <nav class="navbar navbar-expand-lg navbar-dark py-3 mt-3 mx-2 scroll-top">
-                <div class="container">
-                    <a href="#" class="navbar-brand px-3">mfp</a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- <div id="navmenu" class="collapse navbar-collapse px-1">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a href="#hero"
-                                    class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="#"
-                                    class="nav-link">About</a></li>
-                            <li class="nav-item"><a href="#"
-                                    class="nav-link">Interest</a></li>
-                            <li class="nav-item"><a href="#"
-                                    class="nav-link">Portfolio <i
-                                        class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li class="nav-item"><a href="#"
-                                    class="nav-link">Docs <i
-                                        class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li class="nav-item"><a href="#"
-                                    class="nav-link">Blogs <i
-                                        class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li class="nav-item"><a href="#"
-                                    class="nav-link">Contact</a></li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle"
-                                    data-bs-toggle="dropdown">Theme</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#" class="dropdown-item"><span
-                                                class="bi bi-gear"></span>
-                                            Action</a></li>
-                                    <li><a href="#"
-                                            class="dropdown-item">Act2</a></li>
-                                    <li><a href="#"
-                                            class="dropdown-item">Act3</a></li>
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-primary">
+                                <a href="#" class="navbar-brand px-3">mfp</a>
+                            </div>
+                            <div class="bg-warning">
+                                <div class="ham-toggle">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar2"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div id="navmenu" class="collapse bg-info navbar-collapse ">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a href="#hero"
+                                            class="nav-link">Home</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link">About</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link">Interest</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link">Portfolio <i
+                                                class="bi bi-box-arrow-up-right"></i></a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link">Docs <i
+                                                class="bi bi-box-arrow-up-right"></i></a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link">Blogs <i
+                                                class="bi bi-box-arrow-up-right"></i></a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link">Contact</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle"
+                                            data-bs-toggle="dropdown">Theme</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="dropdown-item"><span
+                                                        class="bi bi-gear"></span>
+                                                    Action</a></li>
+                                            <li><a href="#"
+                                                    class="dropdown-item">Act2</a></li>
+                                            <li><a href="#"
+                                                    class="dropdown-item">Act3</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div> -->
-
-                    <div class="ham-toggle">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar2"></span>
-                        <span class="bar2"></span>
-                        <span class="bar2"></span>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
             </nav>

@@ -21,7 +21,7 @@ body{
 .navbar-brand{
     /* position: fixed; */
     font-family: var(--font-brand), sans-serif;
-    background-color: #121212;
+    /* background-color: #121212; */
     padding-left: 15px;
     padding-right: 15px;
     /* -webkit-transition: all .3s ease-in-out; */
@@ -47,74 +47,74 @@ body{
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease;
 }
+@media (max-width: 991px) {
+    /* THE HAM TOGGLE */
+    .ham-toggle{
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .bar{
+        display: block;
+        width: 17.5px;
+        height: 3px;
+        margin: 5px auto;
+        transform: translateY(15px);
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease;
+        background-color: #121212;
+    }
+    .bar2{
+        display: block;
+        width: 17.5px;
+        height: 3px;
+        margin: 5px auto;
+        transform: translateX(-17px) translateY(-9px);
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease;
+        background-color: #121212;
+        
+    }
+    .ham-toggle.active .bar:nth-child(1){
+        transform: translateY(11px) rotate(35deg);
+        width: 20px;
+    }
+    .ham-toggle.active .bar2:nth-child(4){
+        transform: translateX(-15px) translateY(-13px) rotate(-35deg);
+        width: 20px;
+    }
+    .ham-toggle.active .bar:nth-child(2){
+        transform: translateY(11px) rotate(35deg);
+        width: 20px;
+    }
+    .ham-toggle.active .bar2:nth-child(5){
+        transform: translateX(-15px) translateY(-13px) rotate(-35deg);
+        width: 20px;
+    }
+    .ham-toggle.active .bar:nth-child(3){
+        transform: translateY(11px) rotate(35deg);
+        width: 20px;
+    }
+    .ham-toggle.active .bar2:nth-child(6){
+        transform: translateX(-15px) translateY(-13px) rotate(-35deg);
+        width: 20px;
+    }
+    .navbar.active{
+        height: 300px;
+    }
+    .navbar.active .navbrand1{
+        -webkit-transition: all .3s ease;
+        transition: all .2s ease-out;
+        transform: translateX(40px) translateY(70px);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .navbar.active .navbrand1 a{
+        color: var(--bs-primary);
+        font-size: 8rem;
+        font-weight: 700;
+    }
+}
 
-/* THE HAM TOGGLE */
-.ham-toggle{
-    display: block;
-    cursor: pointer;
-    margin-right: 20px;
-}
-.bar{
-    display: block;
-    width: 17.5px;
-    height: 3px;
-    margin: 5px auto;
-    transform: translateY(15px);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease;
-    background-color: #121212;
-}
-.bar2{
-    display: block;
-    width: 17.5px;
-    height: 3px;
-    margin: 5px auto;
-    transform: translateX(-17px) translateY(-9px);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease;
-    background-color: #121212;
-    
-}
-.ham-toggle.active .bar:nth-child(1){
-    transform: translateY(11px) rotate(35deg);
-    width: 20px;
-}
-.ham-toggle.active .bar2:nth-child(4){
-    transform: translateX(-15px) translateY(-13px) rotate(-35deg);
-    width: 20px;
-}
-.ham-toggle.active .bar:nth-child(2){
-    transform: translateY(11px) rotate(35deg);
-    width: 20px;
-}
-.ham-toggle.active .bar2:nth-child(5){
-    transform: translateX(-15px) translateY(-13px) rotate(-35deg);
-    width: 20px;
-}
-.ham-toggle.active .bar:nth-child(3){
-    transform: translateY(11px) rotate(35deg);
-    width: 20px;
-}
-.ham-toggle.active .bar2:nth-child(6){
-    transform: translateX(-15px) translateY(-13px) rotate(-35deg);
-    width: 20px;
-}
-.navbar.active{
-    height: 300px;
-}
-
-.navbar.active .navbrand1{
-    -webkit-transition: all .3s ease;
-    transition: all .2s ease-out;
-    transform: translateX(40px) translateY(70px);
-    background-color: rgba(0, 0, 0, 0);
-}
-.navbar.active .navbrand1 a{
-    color: var(--bs-primary);
-    font-size: 8rem;
-    font-weight: 700;
-}
-/* ==== END ==== */
 
 .hero-section {
     background-color: #f0f0f0;
