@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
+:root {
+    /* Define font families */
+    --font-brand: 'Aleo', Georgia, Times, 'Times New Roman', serif;
+    --font-sans: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#interest i {
+    font-size: 30px;
+    border: 3px solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+body{
+    font-family: var(--font-sans);
+}
+
+/* ==== NAVBAR ==== */
+.navbar-brand{
+    /* position: fixed; */
+    font-family: var(--font-brand), sans-serif;
+    background-color: #121212;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* -webkit-transition: all .3s ease-in-out; */
+    transition: all .3s ease;
+    
+}
+
+.navbar-brand a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    /* -webkit-transition: all .3s ease-in-out; */
+    transition: all .3s ease;
+}
+
+.navbar{
+    /* display: none; */
+    background-color: var(--bs-secondary);
+    height: 100px;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease;
+}
+
+/* THE HAM TOGGLE */
+.ham-toggle{
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.bar{
+    display: block;
+    width: 17.5px;
+    height: 3px;
+    margin: 5px auto;
+    transform: translateY(15px);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease;
+    background-color: #121212;
+}
+.bar2{
+    display: block;
+    width: 17.5px;
+    height: 3px;
+    margin: 5px auto;
+    transform: translateX(-17px) translateY(-9px);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease;
+    background-color: #121212;
+    
+}
+.ham-toggle.active .bar:nth-child(1){
+    transform: translateY(11px) rotate(35deg);
+    width: 20px;
+}
+.ham-toggle.active .bar2:nth-child(4){
+    transform: translateX(-15px) translateY(-13px) rotate(-35deg);
+    width: 20px;
+}
+.ham-toggle.active .bar:nth-child(2){
+    transform: translateY(11px) rotate(35deg);
+    width: 20px;
+}
+.ham-toggle.active .bar2:nth-child(5){
+    transform: translateX(-15px) translateY(-13px) rotate(-35deg);
+    width: 20px;
+}
+.ham-toggle.active .bar:nth-child(3){
+    transform: translateY(11px) rotate(35deg);
+    width: 20px;
+}
+.ham-toggle.active .bar2:nth-child(6){
+    transform: translateX(-15px) translateY(-13px) rotate(-35deg);
+    width: 20px;
+}
+.navbar.active{
+    height: 300px;
+}
+
+.navbar.active .navbrand1{
+    -webkit-transition: all .3s ease;
+    transition: all .2s ease-out;
+    transform: translateX(40px) translateY(70px);
+    background-color: rgba(0, 0, 0, 0);
+}
+.navbar.active .navbrand1 a{
+    color: var(--bs-primary);
+    font-size: 8rem;
+    font-weight: 700;
+}
+/* ==== END ==== */
+
+.hero-section {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+    padding-bottom: 170px;
+    /* margin-bottom: 40px; */
+}
+
+.stats-section {
+    padding: 0;
+    margin-top: -100px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.stats-container {
+    padding: 30px 0;
+}
+
+
+.stat-item {
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border: 1px dotted #ccc;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.stat-icon {
+    background-color: #f0f0f0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+.feature-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.feature-item i {
+    margin-right: 10px;
+}
+
+.small-text {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #6c757d;
+}
+
+.join-btn {
+    background-color: #0a0a29;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+}
+
+.join-btn:hover {
+    background-color: #1a1a4a;
+    color: white;
+}

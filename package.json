@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1"
+  },
+  "scripts": {
+    "bs:copy": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css node_modules/bootstrap/dist/js/bootstrap.bundle.min.js public/vendor/bootstrap",
+    "bs:copy:icons": "copyfiles -f node_modules/bootstrap-icons/font/bootstrap-icons.css public/vendor/bootstrap-icons"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
