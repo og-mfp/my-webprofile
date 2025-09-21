@@ -13,5 +13,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 });
 
+
+// Route using controllers
+Route::get('/home-1', [LandingController::class, '__invoke'])->name('home-1');
+
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
