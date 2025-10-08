@@ -39,13 +39,13 @@ body{
 
 .navbar{
     /* display: none; */
+    display: flex;
+    justify-content: center ;
     background-color: var(--bs-secondary);
-    height: 100px;
-    margin: 30px;
+    width: 100%;
+    margin: 10px;
     border-radius: 10px;
-    padding: 20px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease;
+    padding-bottom: 20px;
 }
 @media (max-width: 991px) {
     /* THE HAM TOGGLE */
