@@ -37,68 +37,85 @@ body{
     transition: all .3s ease;
 }
 
-.navbar{
-    /* display: none; */
-    display: flex;
-    justify-content: center ;
-    background-color: var(--bs-secondary);
-    width: 100%;
-    margin: 10px;
-    border-radius: 10px;
-    padding-bottom: 20px;
+.nav-menu{
+    position: fixed;
+    inset-block-end: 24px;
+    inset-inline: 0;
+    display: grid;
+    place-items: center;
+    z-index: 99;
+    pointer-events: none;
 }
-@media (max-width: 991px) {
-    /* THE HAM TOGGLE */
-    .ham-toggle{
-        display: block;
-        cursor: pointer;
-        margin-right: 20px;
+
+.nav-menu-pill{
+    display: flex;
+    pointer-events: auto;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: linear-gradient(180deg, var(--bs-primary), var(--bs-info));
+    border: 1px solid var(--bs-warning);
+    border-radius: 99rem;
+    box-shadow: var(--bs-shadow);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.nav-menu-pill .nav-item{
+    list-style: none;
+}
+
+.nav-menu-pill .navbar-brand{
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 99rem;
+}
+.nav-menu-pill .nav-item{
+    list-style: none;
+}
+.nav-menu-pill .navbar-brand:hover{
+    opacity: .9;
+}
+.nav-menu-pill .nav-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 99rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background: transparent;
+    transition: color .2s ease, background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.nav-menu-pill .nav-link:hover{
+    background-color: rgba(255,255,255,.12);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.nav-menu-pill .nav-link:focus-visible{
+    outline: 2px solid var(--bs-warning);
+    outline-offset: 2px;
+}
+.nav-menu-pill .nav-link.active{
+    background-color: rgba(255,255,255,.18);
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 575px) {
+    .nav-menu-pill{
+        gap: 4px;
+        padding: 8px;
     }
-    .bar{
-        display: block;
-        width: 17.5px;
-        height: 3px;
-        margin: 5px auto;
-        transform: translateY(15px);
-        -webkit-transition: all .3s ease-in-out;
-        transition: all .3s ease;
-        background-color: #121212;
+    .nav-menu-pill .nav-link{
+        padding: 6px 10px;
+        font-weight: 600;
     }
-    .bar2{
-        display: block;
-        width: 17.5px;
-        height: 3px;
-        margin: 5px auto;
-        transform: translateX(-17px) translateY(-9px);
-        -webkit-transition: all .3s ease-in-out;
-        transition: all .3s ease;
-        background-color: #121212;
-        
-    }
-    .ham-toggle.active .bar:nth-child(1){
-        transform: translateY(11px) rotate(35deg);
-        width: 20px;
-    }
-    .ham-toggle.active .bar2:nth-child(4){
-        transform: translateX(-15px) translateY(-13px) rotate(-35deg);
-        width: 20px;
-    }
-    .ham-toggle.active .bar:nth-child(2){
-        transform: translateY(11px) rotate(35deg);
-        width: 20px;
-    }
-    .ham-toggle.active .bar2:nth-child(5){
-        transform: translateX(-15px) translateY(-13px) rotate(-35deg);
-        width: 20px;
-    }
-    .ham-toggle.active .bar:nth-child(3){
-        transform: translateY(11px) rotate(35deg);
-        width: 20px;
-    }
-    .ham-toggle.active .bar2:nth-child(6){
-        transform: translateX(-15px) translateY(-13px) rotate(-35deg);
-        width: 20px;
-    }
+}
+
+@media (max-width: 991px){
     .navbar.active{
         height: 300px;
     }
@@ -106,7 +123,7 @@ body{
         -webkit-transition: all .3s ease;
         transition: all .2s ease-out;
         transform: translateX(40px) translateY(70px);
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0,0,0,0);
     }
     .navbar.active .navbrand1 a{
         color: var(--bs-primary);
@@ -114,6 +131,8 @@ body{
         font-weight: 700;
     }
 }
+
+
 
 
 .hero-section {

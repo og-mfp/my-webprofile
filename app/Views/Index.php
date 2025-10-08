@@ -13,74 +13,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Header -->
-        <header id="head" class="fixed-bottom ">
-            <!-- TOP HEADER -->
-            <!-- <section id="top-header"
-                class="bg-primary py-1 text-white d-none d-md-block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 pt-2 text-center">
-                            <h6><i class="bi bi-flask-fill"></i>&nbsp;&nbsp;Psst! I'm making the 'eye catchy' version of this page... <a href="#" class="text-white">Click here!</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- NAVIGATION -->
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <div class="container-lg d-flex justify-content-between">
-                    <div class="row w-100">
-                        <div class="col-lg-3 d-flex justify-content-between align-items-center">
-                            <div class="bg-primary">
-                                <a href="#" class="navbar-brand px-3">mfp</a>
-                            </div>
-                            <div class="bg-warning">
-                                <div class="ham-toggle">
-                                    <span class="bar"></span>
-                                    <span class="bar"></span>
-                                    <span class="bar"></span>
-                                    <span class="bar2"></span>
-                                    <span class="bar2"></span>
-                                    <span class="bar2"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div id="navmenu" class="collapse bg-info navbar-collapse justify-content-end">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a href="#hero"
-                                            class="nav-link">Home</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link">About</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link">Interest</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link">Portfolio <i
-                                                class="bi bi-box-arrow-up-right"></i></a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link">Docs <i
-                                                class="bi bi-box-arrow-up-right"></i></a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link">Blogs <i
-                                                class="bi bi-box-arrow-up-right"></i></a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link">Contact</a></li>
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle"
-                                            data-bs-toggle="dropdown">Theme</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="dropdown-item"><span class="bi bi-gear"></span>Action</a></li>
-                                            <li><a href="#" class="dropdown-item">Act2</a></li>
-                                            <li><a href="#" class="dropdown-item">Act3</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <!-- pill center -->
+        <!-- Floating Bottom Navigation -->
+        <nav class="nav-menu" aria-label="Floating navigation">
+            <ul class="nav-menu-pill">
+                <li class="nav-item">
+                    <a href="/" class="navbar-brand px-3">mfp</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- HERO SECTION -->
         <section id="hero" class="py-5 bg-light">
